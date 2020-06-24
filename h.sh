@@ -13,5 +13,6 @@ case "$HSH_ACTION" in
     clone|bundle-out)
         [ -e "$HSH_ROOT/.config/profile" ] || mkdir -p "$HSH_ROOT/.config/profile"
 	[ -e "$HSH_ROOT/bin/pk" ] || ln -s "$HSH_ROOT/.local/share/pk/pk" "$HSH_ROOT/bin/pk"
+	"$HSH_ROOT/bin/hsh" completion -o "$HSH_ROOT/.local/share/bash-completion/completions/_hsh"
         ;;
 esac
