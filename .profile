@@ -4,7 +4,7 @@ if [ -d "$HOME/.config/profile" ]
 then
     for entry in $(ls -1 "$HOME/.config/profile")
     do
-        . "$HOME/.config/profile.d/$entry"
+        . "$HOME/.config/profile/$entry"
     done
 fi
 
