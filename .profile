@@ -8,9 +8,14 @@ then
     done
 fi
 
-PATH=$HOME/bin:$PATH
+export FULL_USER="Clément Rezvoy"
+export EMAIL="clement.rezvoy@gmail.com"
+export LC_ALL=en_US.UTF-8
+export LANGUAGE=en_US.UTF-8
+export LANG=en_US.UTF-8
+export WWW_HOME='http://www.ddg.gg'
+export PATH=$HOME/bin:$PATH
 
-export PATH
 
 
 
