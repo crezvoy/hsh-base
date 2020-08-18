@@ -1,3 +1,0 @@
-[submodule ".local/share/pk"]
-	path = .local/share/pk
-	url = https://github.com/crezvoy/pk.git
