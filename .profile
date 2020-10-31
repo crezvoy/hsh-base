@@ -19,3 +19,5 @@ export PATH=$HOME/bin:$PATH
 
 
 
+
+export PATH="/home/crezvoy/.local/share/cargo/bin:$PATH"

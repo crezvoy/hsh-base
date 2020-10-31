@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export HOMEBREW_TEMP="/home/crezvoy/.local/homebrew/tmp"
+export HOMEBREW_PREFIX="/home/crezvoy/.local/homebrew";
+export HOMEBREW_CELLAR="/home/crezvoy/.local/homebrew/Cellar";
+export HOMEBREW_REPOSITORY="/home/crezvoy/.local/homebrew/homebrew/brew";
+export PATH="/home/crezvoy/.local/homebrew/bin:/home/crezvoy/.local/homebrew/sbin${PATH+:$PATH}";
+export MANPATH="/home/crezvoy/.local/homebrew/share/man${MANPATH+:$MANPATH}:";
+export INFOPATH="/home/crezvoy/.local/homebrew/share/info:${INFOPATH:-}";
