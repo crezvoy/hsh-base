@@ -34,19 +34,9 @@ case "$HSH_ACTION" in
             "rhel")
                 sudo dnf groupinstall 'Development Tools'
                 sudo dnf install curl file git
-                sudo dnf install libxcrypt-compat # needed by Fedora 30 and up
                 ;;
         esac
-        source "$HSH_ROOT/.config/profile/homebrew"
-        HOMEBREW_HOME="$HSH_ROOT/.local/homebrew/homebrew"
-        if [ -d "$HOMEBREW_HOME/brew"  ]
-        then
-            git -C "$HOMEBREW_HOME/brew" pull --rebase
-        else
-            mkdir -p "$HOMEBREW_HOME"
-            git -C "$HOMEBREW_HOME" clone "https://github.com/Homebrew/brew"
-        fi
-        [ -d "$HSH_ROOT/bin"  ] || mkdir "$HSH_ROOT/bin"
-        [ -e "$HSH_ROOT/bin/brew"  ] || ln -s "$HSH_ROOT/.local/homebrew/homebrew/brew/bin/brew" "$HSH_ROOT/bin/brew"
+        [ -d "$HSH_ROOT/bin" ] mkdir -p "$HSH_ROOT/bin"
+        ln -s "$HSH_ROOT/.local/share/pk/pk" "bin/pk"
         ;;
 esac
